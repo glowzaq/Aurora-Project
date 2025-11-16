@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 px-5">
                         <div className="form-section">
                             <h2>Send us a Message</h2>
 

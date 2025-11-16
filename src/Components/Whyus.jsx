@@ -40,8 +40,8 @@ const Whyus = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6">
-                        <img src={seven} alt="Friends playing board games" className="why-image" />
+                    <div className="col-lg-6 px-2">
+                        <img src={seven} alt="Friends playing board games" className="why-image mx-auto d-block" />
                     </div>
                 </div>
             </div>

@@ -90,7 +90,7 @@
 }
 
 .hero-image {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 2rem;
 }
@@ -234,7 +234,7 @@
 }
 
 .why-image {
-  width: 100%;
+  width: 90%;
   height: 400px;
   object-fit: cover;
   border-radius: 1rem;
@@ -419,6 +419,10 @@
 .form-select:focus {
   border-color: #1a1a1a;
   box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.1);
+}
+
+.form-section {
+  width: 100%;
 }
 
 textarea.form-control {
@@ -1239,9 +1243,29 @@ textarea.form-control {
   line-height: 1.6;
 }
 
-/* @media (max-width: 991px) {
-    .col-lg-6:first-child {
-        padding-right: 15px;
-        margin-bottom: 2rem;
-    }
-} */
+@media (max-width: 991px) {
+  .col-lg-6:first-child {
+    padding-right: 15px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    max-width: 100% !important;
+    margin: 0 auto;
+    display: block !important;
+  }
+
+  .why-image {
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form-section {
+    margin-top: 3rem;
+  }
+
+  .form-section h2 {
+    text-align: center;
+  }
+}

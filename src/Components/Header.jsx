@@ -14,8 +14,8 @@ const Header = () => {
               <button className="btn btn-info">Call for Info</button>
             </div>
           </div>
-          <div className="col-lg-6">
-            <img src={one} alt="Board Games" className="hero-image"/>
+          <div className="col-lg-6 px-2">
+            <img src={one} alt="Board Games" className="hero-image" />
           </div>
         </div>
       </div>
