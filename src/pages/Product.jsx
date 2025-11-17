@@ -25,7 +25,7 @@ const Product = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 px-4">
                             <h1 className="product-title">Sarcasm: The Game</h1>
 
                             <div className="product-rating">

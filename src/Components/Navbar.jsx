@@ -14,23 +14,38 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <Link className='nav-link' to={'/'}>Home</Link>
+                            <Link className='nav-link' onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show");
+                            }} to={'/'}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className='nav-link' to={'/products'}>Products</Link>
+                            <Link className='nav-link' onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show");
+                            }} to={'/products'}>Products</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className='nav-link' to={'/about'}>About</Link>
+                            <Link className='nav-link' onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show");
+                            }} to={'/about'}>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className='nav-link' to={'/privacy'}>Privacy</Link>
+                            <Link className='nav-link' to='/privacy' onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show");
+                            }}>Privacy</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contact</a>
+                            <a onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show")
+                            }}  className="nav-link" href="#contact">Contact</a>
+                            {/* <Link onClick={() => {
+                                document.querySelector(".navbar-collapse")?.classList.remove("show")
+                            }} className="nav-link" to="/#contact">Contact</Link> */}
                         </li>
                     </ul>
 
-                    <button className="btn btn-shop"><Link style={{color: 'white', textDecoration: 'none'}} to={'/products'}>Shop Now</Link></button>
+                    <button className="btn btn-shop"><Link onClick={() => {
+                        document.querySelector(".navbar-collapse")?.classList.remove("show");
+                    }} style={{ color: 'white', textDecoration: 'none' }} to={'/products'}>Shop Now</Link></button>
                 </div>
             </div>
         </nav>

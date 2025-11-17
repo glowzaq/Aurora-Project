@@ -33,7 +33,7 @@ const About = () => {
                                 Today, we're proud to bring laughter, chaos, and the occasional existential crisis to game nights everywhere. Because life's too short for boring games.
                             </p>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 px-4">
                             <img src={story}alt="Our Story" className="story-image" />
                         </div>
                     </div>
